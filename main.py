@@ -53,6 +53,7 @@ async def proxy(request: Request, path: str):
                     "model": EMBEDDING_MODEL,
                     "vector": model.encode(conversation["content"]).tolist(),
                 }
+                conversation.pop("content", None)
 
     # Remove headers that should not be forwarded
     headers.pop("host", None)
