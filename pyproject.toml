@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nexad-proxy-server"
+version = "0.1.0"
+description = "Nexad Proxy Server for Transmitting Sensitive Data"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.13,<3.14"
+python-dotenv = "^1.0.0"
+sentence-transformers = "^4.1.0"
+httpx = "^0.28.1"
+uvicorn = "^0.34.2"
+pydantic = "^2.11.4"
+fastapi = "^0.115.12"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
